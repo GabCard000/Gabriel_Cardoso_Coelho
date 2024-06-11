@@ -1,0 +1,97 @@
+/* Define estilos padrão para todos os elementos */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: rgb(10, 10, 10);
+  padding: 17px;
+  display: flex; /* Define o layout do cabeçalho como flexível */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: space-between; /* Distribui os itens horizontalmente com espaçamento igual */
+}
+
+/* Estilos para lista, itens de lista e links dentro do cabeçalho */
+header ul, header li, header a {
+  display: flex; /* Define o layout dos elementos como flexível */
+  gap: 15px; /* Define um espaçamento de 15px entre os elementos */
+  text-decoration: none; /* Remove decoração de link */
+}
+
+/* Estilos para o texto do banner dentro do cabeçalho */
+header .banner {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Estilos para links dentro do cabeçalho */
+header a {
+  color: rgba(182, 181, 181, 0.73); /* Define a cor dos links com transparência */
+  font-size: 15px; /* Define o tamanho da fonte dos links */
+}
+
+/* Estilos para o título h3 */
+h3 {
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 15px; /* Adiciona padding ao redor do título */
+  font-size: 24px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilos para a seção */
+section {
+  display: flex; /* Define o layout da seção como flexível */
+  justify-content: flex-start; /* Alinha os itens da seção ao início */
+  flex-wrap: wrap; /* Permite que os itens da seção quebrem linha conforme necessário */
+  width: 80%; /* Define a largura da seção */
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+  padding: 15px; /* Adiciona padding ao redor da seção */
+}
+
+/* Estilos para os artigos */
+article {
+  padding: 20px; /* Adiciona padding ao redor do artigo */
+  flex-grow: 1; /* Permite que o artigo cresça conforme necessário */
+  width: 270px; /* Define a largura mínima do artigo */
+  max-width: 600px; /* Define a largura máxima do artigo */
+}
+
+/* Estilos para as imagens */
+img {
+  width: 100%; /* Define a largura da imagem como 100% do seu contêiner */
+  height: auto; /* Mantém a proporção da altura automaticamente */
+  max-width: 550px; /* Define a largura máxima da imagem */
+}
+
+/* Estilos para parágrafos */
+p {
+  color: rgb(0, 0, 0); /* Define a cor do texto do parágrafo */
+  font-weight: bold; /* Define o peso da fonte do parágrafo como negrito */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos para telas menores que 650px de largura */
+@media (max-width: 650px) {
+  /* Aumenta o tamanho do texto do banner */
+  header .banner {
+    font-size: 42px;
+  }
+
+  /* Altera a exibição dos elementos da lista no cabeçalho para serem exibidos em bloco */
+  header ul, header li, header a {
+    display: block;
+    font-size: 36px; /* Aumenta o tamanho da fonte */
+  }
+
+  /* Define a largura máxima dos artigos como 100% */
+  article {
+    max-width: 100%;
+  }
+
+  /* Reduz a largura da seção */
+  section {
+    width: 90%;
+  }
+}
